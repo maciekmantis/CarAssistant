@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		54EB9A80195DBD920079FC90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A7F195DBD920079FC90 /* AppDelegate.swift */; };
 		54EB9A83195DBD920079FC90 /* CarAssistant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A81195DBD920079FC90 /* CarAssistant.xcdatamodeld */; };
-		54EB9A85195DBD920079FC90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A84195DBD920079FC90 /* ViewController.swift */; };
-		54EB9A88195DBD920079FC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9A86195DBD920079FC90 /* Main.storyboard */; };
 		54EB9A8A195DBD920079FC90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9A89195DBD920079FC90 /* Images.xcassets */; };
 		54EB9A96195DBD920079FC90 /* CarAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A95195DBD920079FC90 /* CarAssistantTests.swift */; };
+		54EB9AA0195DBEEF0079FC90 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */; };
+		54EB9AA2195DBF060079FC90 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9AA1195DBF060079FC90 /* CarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		54EB9A7E195DBD920079FC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54EB9A7F195DBD920079FC90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54EB9A82195DBD920079FC90 /* CarAssistant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarAssistant.xcdatamodel; sourceTree = "<group>"; };
-		54EB9A84195DBD920079FC90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		54EB9A87195DBD920079FC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54EB9A89195DBD920079FC90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54EB9A8F195DBD920079FC90 /* CarAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EB9A94195DBD920079FC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54EB9A95195DBD920079FC90 /* CarAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAssistantTests.swift; sourceTree = "<group>"; };
+		54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		54EB9AA1195DBF060079FC90 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				54EB9A7F195DBD920079FC90 /* AppDelegate.swift */,
-				54EB9A84195DBD920079FC90 /* ViewController.swift */,
-				54EB9A86195DBD920079FC90 /* Main.storyboard */,
 				54EB9A89195DBD920079FC90 /* Images.xcassets */,
 				54EB9A81195DBD920079FC90 /* CarAssistant.xcdatamodeld */,
 				54EB9A7D195DBD920079FC90 /* Supporting Files */,
+				54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */,
+				54EB9AA1195DBF060079FC90 /* CarViewController.swift */,
 			);
 			path = CarAssistant;
 			sourceTree = "<group>";
@@ -192,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54EB9A88195DBD920079FC90 /* Main.storyboard in Resources */,
 				54EB9A8A195DBD920079FC90 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,9 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54EB9A85195DBD920079FC90 /* ViewController.swift in Sources */,
+				54EB9AA0195DBEEF0079FC90 /* LogViewController.swift in Sources */,
 				54EB9A80195DBD920079FC90 /* AppDelegate.swift in Sources */,
 				54EB9A83195DBD920079FC90 /* CarAssistant.xcdatamodeld in Sources */,
+				54EB9AA2195DBF060079FC90 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,17 +234,6 @@
 			targetProxy = 54EB9A90195DBD920079FC90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		54EB9A86195DBD920079FC90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54EB9A87195DBD920079FC90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		54EB9A97195DBD920079FC90 /* Debug */ = {

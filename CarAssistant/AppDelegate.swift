@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+        
+        let tabBarController = UITabBarController()
+        let logViewController = LogViewController()
+        let carViewController = CarViewController()
+        let controllers = [logViewController, carViewController]
+        
+        logViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.MostViewed, tag: 0)
+        carViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Contacts, tag: 1)
+        tabBarController.viewControllers = controllers
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.rootViewController = tabBarController
+        window!.makeKeyAndVisible()
+        
         // Override point for customization after application launch.
         return true
     }
