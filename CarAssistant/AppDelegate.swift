@@ -19,11 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabBarController = UITabBarController()
         let logViewController = LogViewController()
+        let navigationLogController: UINavigationController = UINavigationController(rootViewController: logViewController)
         let carViewController = CarViewController()
-        let controllers = [logViewController, carViewController]
+        let controllers = [navigationLogController, carViewController]
         
-        logViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.MostViewed, tag: 0)
-        carViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Contacts, tag: 1)
         tabBarController.viewControllers = controllers
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)

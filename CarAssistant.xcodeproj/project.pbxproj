@@ -13,6 +13,10 @@
 		54EB9A96195DBD920079FC90 /* CarAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A95195DBD920079FC90 /* CarAssistantTests.swift */; };
 		54EB9AA0195DBEEF0079FC90 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */; };
 		54EB9AA2195DBF060079FC90 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9AA1195DBF060079FC90 /* CarViewController.swift */; };
+		54EB9AA4196126DA0079FC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9AA3196126DA0079FC90 /* Main.storyboard */; };
+		54EB9AA61961275C0079FC90 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9AA51961275C0079FC90 /* icon.png */; };
+		54EB9AAA19612C510079FC90 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9AA919612C510079FC90 /* CustomTableViewCell.swift */; };
+		54EB9AAC19612E2B0079FC90 /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9AAB19612E2B0079FC90 /* LogDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		54EB9A95195DBD920079FC90 /* CarAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAssistantTests.swift; sourceTree = "<group>"; };
 		54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		54EB9AA1195DBF060079FC90 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		54EB9AA3196126DA0079FC90 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		54EB9AA51961275C0079FC90 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		54EB9AA919612C510079FC90 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		54EB9AAB19612E2B0079FC90 /* LogDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				54EB9A7F195DBD920079FC90 /* AppDelegate.swift */,
+				54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */,
+				54EB9AAB19612E2B0079FC90 /* LogDetailViewController.swift */,
+				54EB9AA1195DBF060079FC90 /* CarViewController.swift */,
+				54EB9AA919612C510079FC90 /* CustomTableViewCell.swift */,
 				54EB9A89195DBD920079FC90 /* Images.xcassets */,
 				54EB9A81195DBD920079FC90 /* CarAssistant.xcdatamodeld */,
+				54EB9AA3196126DA0079FC90 /* Main.storyboard */,
+				54EB9AA51961275C0079FC90 /* icon.png */,
 				54EB9A7D195DBD920079FC90 /* Supporting Files */,
-				54EB9A9F195DBEEF0079FC90 /* LogViewController.swift */,
-				54EB9AA1195DBF060079FC90 /* CarViewController.swift */,
 			);
 			path = CarAssistant;
 			sourceTree = "<group>";
@@ -193,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EB9A8A195DBD920079FC90 /* Images.xcassets in Resources */,
+				54EB9AA4196126DA0079FC90 /* Main.storyboard in Resources */,
+				54EB9AA61961275C0079FC90 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EB9AA0195DBEEF0079FC90 /* LogViewController.swift in Sources */,
+				54EB9AAA19612C510079FC90 /* CustomTableViewCell.swift in Sources */,
 				54EB9A80195DBD920079FC90 /* AppDelegate.swift in Sources */,
 				54EB9A83195DBD920079FC90 /* CarAssistant.xcdatamodeld in Sources */,
+				54EB9AAC19612E2B0079FC90 /* LogDetailViewController.swift in Sources */,
 				54EB9AA2195DBF060079FC90 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
